@@ -1,0 +1,11 @@
+Linguagem,Erro Identificado,Categoria
+Python,Nenhum,Nenhum
+C,Crivo incompleto,Lógica
+C,Incompleto,Eficiência
+C++,Vetor pequeno,Lógica
+C,Nenhum,Nenhum
+TypeScript,Lógica incorreta,Lógica
+Haskell,Ineficiente,Eficiência
+Python (Extra),Nenhum,Nenhum
+Java (Extra),Nenhum,Nenhum
+Rust (Extra),Nenhum,Nenhum

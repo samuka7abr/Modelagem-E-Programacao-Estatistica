@@ -1,0 +1,195 @@
+Carimbo de data/hora,Qual seu curso?,Qual seu semestre?,Qual é o seu nível de experiência em programação?,Você já usou alguma ferramenta de IA para auxiliar no aprendizado de programação?,"Se sim, qual(is) ferramenta(s) de IA você usou?",Com que frequência você utiliza IA para aprender ou resolver problemas de programação?,Qual a principal razão para utilizar IA no aprendizado de programação?,"Na sua opinião, o uso de IA impactou positivamente sua habilidade em resolver problemas de programação?",Quais habilidades de programação você considera que a IA ajuda a desenvolver? (Selecione todas que se aplicam),O uso de IA ajudou você a ganhar mais confiança para programar de forma independente?,Você acha que o uso de IA pode criar uma dependência ao programar?,"Ao usar IA, você sente que compreende melhor os conceitos ou que apenas obtém respostas rápidas?",Qual foi a sua maior dificuldade ao aprender a programar sem usar IA?,"Qual a sua opinião sobre o uso de IA para aprendizado em disciplinas técnicas, como programação?","Opcional, mas importante para nossa pesquisa: Crie uma função/programa em qualquer linguagem de programação que receba uma lista de números inteiros e retorne uma nova lista contendo apenas os números primos. Por favor, resolva sem o uso de IA. Caso não tenha certeza na resposta, envie o código da forma que acredita estar correto. "
+29/10/2024 10:17:13,Direito ,1° ,Iniciante,Sim,Chat Gpt,Sempre,"Resolver problemas, Entender códigos, Gerar ideias, Melhorar habilidades de codificação",Sim,"Lógica, Sintaxe, Estrutura de Dados, Algorítimos, Depuração, Otimização",Discordo,Sim,Compreendo melhor,As vezes eu não entendo aí ela me ajuda a entender ,Bom ,sim 
+29/10/2024 10:26:12,Engenharia de Software,2,Iniciante,Sim,"Chat Gpt, Blackbox ai",Quase sempre,"Resolver problemas, Entender códigos, Otimizar tempo",Sim,"Sintaxe, Estrutura de Dados",Discordo,Sim,Apenas obtenho respostas rápidas,sintaxe,bom,
+29/10/2024 10:34:07,Engenharia de Software,2° semestre,Iniciante,Sim,Chat Gpt,Quase sempre,"Resolver problemas, Entender códigos, Otimizar tempo",Sim,"Estrutura de Dados, Algorítimos, Otimização",Neutro,Sim,Compreendo melhor,Organização dos códigos,"Bastante útil, mas está sujeito ao carácter da pessoa se ela irá utilizar como uma ferramente para ajudá-la ou para fazer o trabalho inteiro.",✓
+29/10/2024 10:35:28,Economia,Segundo,Iniciante,Sim,Chat Gpt,Quase sempre,"Entender códigos, Melhorar habilidades de codificação",Não,"Lógica, Estrutura de Dados",Discordo,Sim,Apenas obtenho respostas rápidas,,,
+29/10/2024 10:35:30,Engenharia de Software,2,Intermediário,Sim,Chat Gpt,Sempre,"Resolver problemas, Gerar ideias, Otimizar tempo",Sim,"Estrutura de Dados, Otimização",Concordo Totalmente,Sim,Apenas obtenho respostas rápidas,,,
+29/10/2024 10:38:02,Economia,4,Intermediário,Sim,"Chat Gpt, Copilot",Raramente,"Entender códigos, Otimizar tempo",Sim,"Lógica, Otimização",Neutro,Sim,Compreendo melhor,Dificuldade de aprender a sintaxe,"Ela serve como fonte de consulta e resolução de dúvidas, dependendo da disciplina",
+29/10/2024 10:43:19,Ciência da Computação,segundo,Iniciante,Sim,"Chat Gpt, Blackbox AI",Quase sempre,"Resolver problemas, Otimizar tempo",Sim,"Sintaxe, Algorítimos",Concordo,Sim,Compreendo melhor,procurar de maneira eficiente variáveis de sintaxes,"Acho extremamente útil, afinal de conta é uma ferramenta super eficiente.",
+29/10/2024 10:52:36,Ciência da Computação,6,Avançado,Sim,"Chat Gpt, Copilot",Quase sempre,"Gerar ideias, Otimizar tempo",Sim,"Lógica, Estrutura de Dados, Depuração",Neutro,Sim,Apenas obtenho respostas rápidas,"A demora para conseguir resultados, com IA conseguimos resultados quase que instantâneos sobre determinado assunto, mesmo que muita das vezes sejam resultados errados.",,"#include <bits/stdc++.h>
+
+using namespace std;
+
+vector<bool> primos(10e2, true);
+
+void crivo() {
+  primos[0] = primos[1] = false;
+
+  for (int i = 2; i < primos.size(); i++) {
+    if (primos[i]) {
+      for (int j = 2 * i; j < primos.size(); j += i) {
+        primos[j] = false;
+      }
+    }
+  }
+}
+
+vector<int> verificaPrimos(vector<int> v) {
+  vector<int> novosPrimos;
+
+  for (int it : v) {
+    if (primos[it]) {
+      novosPrimos.push_back(it);
+    }
+  }
+
+  return novosPrimos;
+}
+
+int main() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cout.tie(NULL);
+
+  crivo();
+
+  vector<int> teste = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+  vector<int> saoPrimosQ = verificaPrimos(teste);
+
+  for (auto it : saoPrimosQ) {
+    cout << it << ' ';
+  }
+
+  cout << endl;
+
+  return 0;
+}
+"
+29/10/2024 11:13:19,Engenharia de Software,1,Iniciante,Sim,Chat Gpt,Quase sempre,"Resolver problemas, Gerar ideias, Melhorar habilidades de codificação",Sim,"Lógica, Sintaxe, Estrutura de Dados, Algorítimos, Depuração",Concordo Totalmente,Não,Compreendo melhor,Suporte ,Importante para aprendizado ,.
+29/10/2024 11:59:12,Ciência da Computação,Formado,Avançado,Sim,"Chat Gpt, Copilot, CodePilot, LLaMA, Gemini, Claude",Raramente,"Gerar ideias, Otimizar tempo",Sim,"Depuração, Organização",Discordo Totalmente,Sim,Apenas obtenho respostas rápidas,Ter locais para praticar.,"A ferramenta pode auxiliar no aprendizado, sem o uso para cópia de respostas e sim para insights.","#include <stdio.h>
+#include <stdlib.h>
+#define TS 10000
+// Lista de inteiros (Z) p/ referencia:
+// -5, -4, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+
+// Limite pré-calculado
+int primos[TS];
+
+typedef struct Resposta {
+    int *ans;
+    int nr;
+} resposta; 
+
+void crivo()
+{
+    primos[0] = primos[1];
+
+    for (int i = 2; i * i < TS; i++) {
+        if (!primos[i]) {
+            for (int j = i * 2; j < TS; j += i) {
+                primos[j] = 1;
+            }
+        }
+    }
+
+}
+
+resposta somente_primos(int *V, int n)
+{
+    resposta r;
+    r.nr = 0;
+
+    for (int i = 0; i < n; i++) {
+        if (V[i] < 2) continue;
+        if (!primos[V[i]]) {
+            r.nr++;
+        }
+    }
+
+    r.ans = (int *)malloc(n * sizeof(int));
+
+    for (int i = 0, k = 0; i < n; i++) {
+        if (V[i] < 2) continue;
+        if (!primos[V[i]]) {
+            r.ans[k++] = V[i];
+        }
+    }
+
+    return r;
+}
+
+
+int main()
+{
+    int L[] = {-5, -4, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
+    resposta resp;
+
+    crivo();
+   
+    resp = somente_primos(L, sizeof(L) / sizeof(L[0]));
+    printf(""Quantidade: %d\nPrimos: "", resp.nr);
+    for (int i = 0; i < resp.nr; i++) {
+        printf(""%d "", resp.ans[i]);
+    }
+    putchar('\n');
+
+    free(resp.ans);
+
+    return 0;
+}
+"
+29/10/2024 15:19:41,Engenharia de Software,8º,Avançado,Sim,"Chat Gpt, Copilot",Quase sempre,"Entender códigos, Melhorar habilidades de codificação, Otimizar tempo",Sim,"Lógica, Sintaxe, Estrutura de Dados, Algorítimos",Discordo,Sim,Apenas obtenho respostas rápidas,"Minha principal dificuldade foi encontrar tutoriais resumidos para aprender linguagens novas. A IA facilita meu trabalho em não ter que pesquisar em diversas fontes/sites sobre como utilizar um determinado framework ou uma função de uma lib, por exemplo.","A IA facilita muita coisa, eleva sua curva de aprendizado e agrega em um só lugar conhecimentos que você precisaria procurar em vários sites, de várias fontes diferentes. Porém, ela deve ser usada com parcimônia, para que não cause uma excessiva dependência.","Solução em haskell:
+
+primos l = [e | e <- l, all (\f -> gcd e f == 1) [2..floor(sqrt(fromInteger e))]]"
+30/10/2024 00:52:54,Engenharia de Software,Primeiro,Intermediário,Sim,"Chat Gpt, Gemini",Raramente,"Resolver problemas, Entender códigos, Melhorar habilidades de codificação, Otimizar tempo",Sim,"Lógica, Sintaxe, Estrutura de Dados",Discordo Totalmente,Sim,Compreendo melhor,"Nenhuma, já que grande parte das ferramentas estão em constante desenvolvimento, então a IA em sua maioria, mais atrapalha que ajuda, mas em casos onde mais a lógica importa, ela se sai melhor ","Um bom professor para te ensinar, mas ele mente de vez em quando ",
+30/10/2024 07:33:38,Ciência da Computação,5,Avançado,Sim,"Chat Gpt, Copilot",Sempre,"Resolver problemas, Entender códigos, Gerar ideias, Melhorar habilidades de codificação, Otimizar tempo",Sim,"Lógica, Sintaxe, Depuração, Otimização",Neutro,Sim,Compreendo melhor,Pensar em uma lógica para o problema ,Sou a favor ,"int primos(int x)
+if(x <=1) return 0
+if(x == 2) return 1
+if(x%2==0) return 0
+for(int i=3;i*i <= x;i+=2){
+if(x%i == 0) return 0} return 1}
+//eu faço o código sem IA e vocês corrigem com IA?
+"
+01/11/2024 12:36:57,Engenharia de Software,Primeiro,Intermediário,Sim,"Chat Gpt, Gemini",Raramente,"Resolver problemas, Entender códigos, Gerar ideias, Melhorar habilidades de codificação",Sim,"Lógica, Estrutura de Dados, Otimização",Discordo Totalmente,Sim,Compreendo melhor,Nenhuma pois grande parte do tempo eu leio as documentações ou exemplos praticos das bibliotecas,"No começo ele pode lhe ajudar bastante, muito mesmo, mas chega num ponto onde ele cria exemplos que mais trazem problemas do que soluções, então ao longo do tempo, é melhor focar no entendimento do que criar uma dependencia de um lixo que so sabe mentir.","const numbers = [1, 2, 3, 4, 5, 6, 7]
+
+const primos: number[] = []
+for (const number of numbers) {
+  if (number <= 1) continue
+  if (number**2 % 2) primos.push(number)
+}
+console.log(primos)"
+04/11/2024 20:16:52,Engenharia de Software,2,Iniciante,Sim,Chat Gpt,Quase sempre,"Resolver problemas, Entender códigos",Não,"Sintaxe, Algorítimos",Discordo Totalmente,Sim,Apenas obtenho respostas rápidas,Desenvolver a lógica por trás.,Te deixa muito relaxado e não te forma um bom profissional,
+04/11/2024 22:01:38,Ciência da Computação,2,Iniciante,Sim,"Chat Gpt, Copilot, CodePilot",Quase sempre,Entender códigos,Sim,"Sintaxe, Facilita a leitura e encontrar erros em codigos",Concordo,Sim,Compreendo melhor,"Demora para um avanço que precisava
+",deve ser usado com responsabilidade... pode causar dependência,
+05/11/2024 13:15:16,Ciência da Computação,1° Semestre ,Iniciante,Sim,"Chat Gpt, Copilot",Sempre,Resolver problemas,Não,"Lógica, Algorítimos",Discordo,Sim,Apenas obtenho respostas rápidas,"Entender algoritmos, lógica e cálculo 1.","É interessante quando se usa para entender mesmo a disciplina, mas a maioria dos alunos uso para copiar as respostas.",
+05/11/2024 14:16:37,Engenharia de Software,Primeiro,Iniciante,Sim,"Chat Gpt, Copilot",Raramente,"Resolver problemas, Gerar ideias, Melhorar habilidades de codificação, Otimizar tempo",Sim,"Lógica, Estrutura de Dados",Concordo,Sim,Compreendo melhor,"Quando eu tive dúvidas específicas, era mais difícil encontrar as respostas que eu precisava.","Eu sou a favor, mas até o ponto que ela não atrapalhe o ensino do aluno. O aluno tem que entender cada linha do que ele está desenvolvendo.","Python:
+
+def verificar_primos(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def filtrar_primos(lista_numeros):
+    return [num for num in lista_numeros if verificar_primos(num)]
+
+entrada = input(""Digite uma lista de números inteiros separados por espaço: "")
+lista_numeros = list(map(int, entrada.split()))
+
+numeros_primos = filtrar_primos(lista_numeros)
+print(""Os números primos na lista são:"", numeros_primos)"
+06/11/2024 11:01:19,Engenharia de Software,2,Intermediário,Sim,Chat Gpt,Quase sempre,"Resolver problemas, Entender códigos, Melhorar habilidades de codificação, Otimizar tempo",Sim,"Lógica, Estrutura de Dados, Algorítimos, Otimização",Concordo,Sim,Apenas obtenho respostas rápidas,"Estrutura de Dados
+","é muito bom se souber usar, muita gente se engana achando que está aprendendo, mas acaba se autossabotando ","bool eh_primo(int n) {
+    if (n <= 1) return false;  
+    if (n <= 3) return true;  
+    if (n % 2 == 0 || n % 3 == 0) return false;
+
+    for (int i = 5; i * i <= n; i += 6) {
+        if (n % i == 0 || n % (i + 2) == 0) return false;
+    }
+    return true;
+}
+
+void identifica_primos(int arr[], int tamanho) {
+    printf(""Números primos no array: "");
+    for (int i = 0; i < tamanho; i++) {
+        if (eh_primo(arr[i])) {
+            printf(""%d "", arr[i]);
+        }
+    }
+    printf(""\n"");
+}"
+08/11/2024 18:17:59,Engenharia de Software,6,Intermediário,Sim,"Chat Gpt, Copilot, CodePilot",Quase sempre,"Resolver problemas, Entender códigos, Gerar ideias",Sim,"Lógica, Estrutura de Dados",Neutro,Sim,Compreendo melhor,Entendimento ,Acho que agrega,
