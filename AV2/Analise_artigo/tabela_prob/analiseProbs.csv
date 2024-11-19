@@ -6,6 +6,6 @@ C++,Vetor pequeno,Lógica
 C,Nenhum,Nenhum
 TypeScript,Lógica incorreta,Lógica
 Haskell,Ineficiente,Eficiência
-Python (Extra),Nenhum,Nenhum
-Java (Extra),Nenhum,Nenhum
-Rust (Extra),Nenhum,Nenhum
+Python,Nenhum,Nenhum
+Java,Nenhum,Nenhum
+Rust,Nenhum,Nenhum
